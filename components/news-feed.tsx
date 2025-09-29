@@ -68,7 +68,11 @@ export default function NewsFeed() {
           更多 →
         </a>
       </div>
-
+      <img
+        src="https://cdn.christianpost.com/images/cache/image/15/73/157359_w_700_394.webp"
+        alt="test"
+        style={{ width: '200px', height: '150px' }}
+      />
       <div className="space-y-3 max-h-[calc(100vh-200px)] overflow-y-auto">
         {newsItems.map((item, index) => (
           <a key={index} href="#" className="block group hover:bg-muted rounded-lg p-2 transition-colors">
@@ -78,7 +82,6 @@ export default function NewsFeed() {
                 alt={item.title}
                 className="w-20 h-16 md:w-24 md:h-20 object-cover rounded flex-shrink-0 bg-muted"
                 onError={() => handleImageError(index)}
-                crossOrigin="anonymous"
               />
               <div className="flex-1 min-w-0">
                 <h3 className="text-xs md:text-sm font-medium text-foreground group-hover:text-accent line-clamp-2 mb-1">

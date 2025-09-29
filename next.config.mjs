@@ -13,7 +13,7 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'cdn.christianpost.com',
         port: '',
-        pathname: '/images/**',
+        pathname: '/**',
       },
       {
         protocol: 'https',
