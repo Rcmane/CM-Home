@@ -3,6 +3,7 @@
 import { Card } from "@/components/ui/card"
 import { Clock } from "lucide-react"
 import { useState } from "react"
+import Image from "next/image"
 
 const newsItems = [
   {
@@ -68,19 +69,17 @@ export default function NewsFeed() {
           更多 →
         </a>
       </div>
-      <img
-        src="https://cdn.christianpost.com/images/cache/image/15/73/157359_w_700_394.webp"
-        alt="test"
-        style={{ width: '200px', height: '150px' }}
-      />
       <div className="space-y-3 max-h-[calc(100vh-200px)] overflow-y-auto">
         {newsItems.map((item, index) => (
           <a key={index} href="#" className="block group hover:bg-muted rounded-lg p-2 transition-colors">
             <div className="flex gap-3">
-              <img
+              <Image
                 src={imageErrors[index] ? "/placeholder.svg?height=80&width=96" : item.image}
                 alt={item.title}
                 className="w-20 h-16 md:w-24 md:h-20 object-cover rounded flex-shrink-0 bg-muted"
+                width={96}
+                height={80}
+                quality={70}
                 onError={() => handleImageError(index)}
               />
               <div className="flex-1 min-w-0">
