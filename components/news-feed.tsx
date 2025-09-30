@@ -10,7 +10,7 @@ const newsItems = [
     title: "Bill Maher rebukes media for silence on genocide of Christians in Nigeria",
     source: "CDI",
     time: "21 minutes ago",
-    image: "https://cdn.christianpost.com/images/cache/image/15/73/157358_w_700_480.webp",
+    image1: "https://cdn.christianpost.com/images/cache/image/15/73/157358_w_700_480.webp",
   },
   {
     title: "China cracks down on pastors' online activities, bans evangelizing youth",
@@ -79,8 +79,8 @@ export default function NewsFeed() {
                 className="w-20 h-16 md:w-24 md:h-20 object-cover rounded flex-shrink-0 bg-muted"
                 width={96}
                 height={80}
-                quality={70}
                 onError={() => handleImageError(index)}
+                unoptimized
               />
               <div className="flex-1 min-w-0">
                 <h3 className="text-xs md:text-sm font-medium text-foreground group-hover:text-accent line-clamp-2 mb-1">

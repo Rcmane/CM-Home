@@ -1,4 +1,6 @@
 import Header from "@/components/header"
+import GameIcons from "@/components/game-icons"
+import QuickLinks from "@/components/quick-links"
 import GameShortcuts from "@/components/game-shortcuts"
 import CategoryNav from "@/components/category-nav"
 import LinkSections1 from "@/components/link-sections-1"
@@ -11,9 +13,10 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
+      <GameIcons />
+      <QuickLinks />
       <GameShortcuts />
       <CategoryNav />
-
       <div className="container mx-auto px-2 md:px-4 py-4">
         <div className="flex flex-col lg:flex-row gap-4">
           {/* Sidebar - hidden on mobile, shown on desktop */}
