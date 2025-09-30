@@ -6,11 +6,11 @@ const games = [
   { name: "大天使之剑", color: "bg-orange-600" },
   { name: "蓝月传奇", color: "bg-slate-700" },
   { name: "屠龙破晓", color: "bg-yellow-600" },
-  { name: "屠龙破晓", color: "bg-yellow-600" },
-  { name: "屠龙破晓", color: "bg-yellow-600" },
-  { name: "屠龙破晓", color: "bg-yellow-600" },
-  { name: "屠龙破晓", color: "bg-yellow-600" },
-  { name: "屠龙破晓", color: "bg-yellow-600" },
+  { name: "原神", color: "bg-red-600" },
+  { name: "博德之门", color: "bg-purple-600" },
+  { name: "双人奇境", color: "bg-green-600" },
+  { name: "荒野大镖客", color: "bg-pink-600" },
+  { name: "王国之泪", color: "bg-lime-600" },
 ]
 
 const GamepadIcon = () => (
