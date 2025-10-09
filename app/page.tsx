@@ -1,7 +1,9 @@
 import Header from "@/components/header"
 import GameIcons from "@/components/game-icons"
+import SubsiteIcons from "@/components/subsite-icons"
 import QuickLinks from "@/components/quick-links"
 import GameShortcuts from "@/components/game-shortcuts"
+import TopicShortcuts from "@/components/topic-shortcuts"
 import CategoryNav from "@/components/category-nav"
 import LinkSections1 from "@/components/link-sections-1"
 import LinkSections2 from "@/components/link-sections-2"
@@ -9,13 +11,17 @@ import LinkSections3 from "@/components/link-sections-3"
 import NewsFeed from "@/components/news-feed"
 import Sidebar from "@/components/sidebar"
 
+
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      <GameIcons />
+      {/* <GameIcons /> */}
+      <SubsiteIcons />
       <QuickLinks />
-      <GameShortcuts />
+      {/* <GameShortcuts /> */}
+      <TopicShortcuts />
       <CategoryNav />
       <div className="container mx-auto px-2 md:px-4 py-4">
         <div className="flex flex-col lg:flex-row gap-4">
@@ -27,8 +33,8 @@ export default function Home() {
           {/* Main Content */}
           <main className="flex-1 min-w-0">
             <LinkSections1 />
-            <LinkSections2 />
-            <LinkSections3 />
+            {/* <LinkSections2 /> */}
+            {/* <LinkSections3 /> */}
           </main>
 
           {/* News Feed */}

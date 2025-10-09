@@ -64,9 +64,9 @@ export default function NewsFeed() {
   return (
     <Card className="p-3 md:p-4 sticky top-20">
       <div className="flex items-center justify-between mb-4 border-b border-border pb-2">
-        <h2 className="text-base md:text-lg font-bold text-foreground">热点新闻</h2>
+        <h2 className="text-base md:text-lg font-bold text-foreground">Breaking News</h2>
         <a href="#" className="text-xs md:text-sm text-accent hover:underline">
-          更多 →
+          More →
         </a>
       </div>
       <div className="space-y-3 max-h-[calc(100vh-200px)] overflow-y-auto">

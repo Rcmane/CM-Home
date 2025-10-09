@@ -315,9 +315,9 @@ export default function LinkSections1() {
                     {link}
                   </a>
                 ))}
-                <a href="#" className="text-xs md:text-sm text-blue-600 hover:text-red-600 hover:underline">
-                  更多&gt;&gt;
-                </a>
+                {/* <a href="#" className="text-xs md:text-sm text-blue-600 hover:text-red-600 hover:underline">
+                  More&gt;&gt;
+                </a> */}
               </div>
             </Card>
           ))}
@@ -329,7 +329,7 @@ export default function LinkSections1() {
           onClick={() => setIsExpanded(!isExpanded)}
           className="text-sm text-gray-600 hover:text-blue-600 flex items-center gap-1"
         >
-          {isExpanded ? "点击收起 ▲" : "点击展开 ▼"}
+          {isExpanded ? "Click to collapse ▲" : "Click to expand ▼"}
         </button>
       </div>
     </div>

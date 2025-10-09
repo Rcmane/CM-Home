@@ -139,83 +139,83 @@ const HeartIcon = () => (
 
 const linkCategories = [
   {
-    title: "视频",
+    title: "Videos",
     icon: VideoIcon,
     links: [
-      { name: "优酷", url: "#" },
-      { name: "爱奇艺", url: "#" },
-      { name: "腾讯视频", url: "#" },
-      { name: "B站", url: "#" },
+      { name: "Youtube", url: "https://www.youtube.com/" },
+      { name: "TikTok", url: "https://www.tiktok.com/" },
+      { name: "Instagram Reels", url: "https://about.instagram.com/features/reels" },
+      { name: "Snapchat Spotlight", url: "https://www.snapchat.com/" },
     ],
   },
   {
-    title: "音乐",
+    title: "Music",
     icon: MusicIcon,
     links: [
-      { name: "QQ音乐", url: "#" },
-      { name: "网易云音乐", url: "#" },
-      { name: "酷狗音乐", url: "#" },
-      { name: "酷我音乐", url: "#" },
+      { name: "Spotify", url: "https://www.spotify.com" },
+      { name: "Apple Music", url: "https://music.apple.com" },
+      { name: "YouTube Music", url: "https://music.youtube.com" },
+      { name: "Amazon Music", url: "https://music.amazon.com" },
     ],
   },
   {
-    title: "购物",
+    title: "Shopping",
     icon: ShoppingBagIcon,
     links: [
-      { name: "淘宝", url: "#" },
-      { name: "京东", url: "#" },
-      { name: "拼多多", url: "#" },
-      { name: "天猫", url: "#" },
+      { name: "Amazon", url: "https://www.amazon.com" },
+      { name: "Walmart", url: "https://www.walmart.com" },
+      { name: "eBay", url: "https://www.ebay.com" },
+      { name: "Best Buy", url: "https://www.bestbuy.com" },
     ],
   },
   {
-    title: "新闻",
+    title: "News",
     icon: NewspaperIcon,
     links: [
-      { name: "新浪新闻", url: "#" },
-      { name: "腾讯新闻", url: "#" },
-      { name: "网易新闻", url: "#" },
-      { name: "搜狐新闻", url: "#" },
+      { name: "CNN", url: "https://www.cnn.com" },
+      { name: "Fox News", url: "https://www.foxnews.com" },
+      { name: "MSNBC", url: "https://www.msnbc.com" },
+      { name: "ABC News", url: "https://abcnews.go.com" },
     ],
   },
   {
-    title: "财经",
+    title: "Finance",
     icon: TrendingUpIcon,
     links: [
-      { name: "新浪财经", url: "#" },
-      { name: "东方财富", url: "#" },
-      { name: "同花顺", url: "#" },
-      { name: "雪球", url: "#" },
+      { name: "Bloomberg", url: "https://www.bloomberg.com" },
+      { name: "CNBC", url: "https://www.cnbc.com" },
+      { name: "Financial Times", url: "https://www.ft.com" },
+      { name: "Forbes", url: "https://www.forbes.com" },
     ],
   },
   {
-    title: "旅游",
+    title: "Travel",
     icon: MapPinIcon,
     links: [
-      { name: "携程", url: "#" },
-      { name: "去哪儿", url: "#" },
-      { name: "飞猪", url: "#" },
-      { name: "马蜂窝", url: "#" },
+      { name: "Expedia", url: "https://www.expedia.com" },
+      { name: "Booking.com", url: "https://www.booking.com" },
+      { name: "Priceline", url: "https://www.priceline.com" },
+      { name: "Trip.com", url: "https://www.trip.com" },
     ],
   },
   {
-    title: "邮箱",
+    title: "Email",
     icon: MailIcon,
     links: [
-      { name: "QQ邮箱", url: "#" },
-      { name: "163邮箱", url: "#" },
-      { name: "126邮箱", url: "#" },
-      { name: "新浪邮箱", url: "#" },
+      { name: "Gmail", url: "https://mail.google.com" },
+      { name: "Outlook.com", url: "https://outlook.com" },
+      { name: "Yahoo Mail", url: "https://mail.yahoo.com" },
+      { name: "iCloud Mail", url: "https://www.icloud.com/mail" },
     ],
   },
   {
-    title: "社交",
+    title: "Social",
     icon: HeartIcon,
     links: [
-      { name: "微博", url: "#" },
-      { name: "知乎", url: "#" },
-      { name: "豆瓣", url: "#" },
-      { name: "小红书", url: "#" },
+      { name: "Facebook", url: "https://www.facebook.com/" },
+      { name: "X", url: "https://x.com/" },
+      { name: "Threads", url: "https://www.threads.net" },
+      { name: "Reddit", url: "Reddit" },
     ],
   },
 ]
@@ -230,13 +230,16 @@ export default function QuickLinks() {
             return (
               <div key={index} className="space-y-3">
                 <div className="flex items-center gap-2 text-sm font-medium">
-                  <Icon className="w-4 h-4 text-primary" />
+                  <div className="w-4 h-4 text-primary" >
+                    <Icon />
+                  </div>
+                  {/* <Icon className="w-4 h-4 text-primary" /> */}
                   <span>{category.title}</span>
                 </div>
                 <ul className="space-y-2">
                   {category.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
-                      <a href={link.url} className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                      <a href={link.url} className="text-sm text-muted-foreground hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer">
                         {link.name}
                       </a>
                     </li>
@@ -247,6 +250,6 @@ export default function QuickLinks() {
           })}
         </div>
       </div>
-    </div>
+    </div >
   )
 }
