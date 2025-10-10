@@ -44,7 +44,6 @@ const sections = [
 
 export default function LinkSections1() {
   const [isExpanded, setIsExpanded] = useState(true)
-
   return (
     <div className="space-y-3">
       {isExpanded && (
