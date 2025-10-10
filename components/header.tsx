@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { useState } from "react"
 import * as Dialog from "@radix-ui/react-dialog"
+import AIChatDialog from "@/components/comet"
 
 export default function Header() {
   const [query, setQuery] = useState("")
@@ -98,7 +99,8 @@ export default function Header() {
               </Button>
               <DialogDemo />
             </form> */}
-            <DialogDemo />
+            {/* <DialogDemo /> */}
+            <AIChatDialog />
           </div>
 
           {/* Right Links */}
